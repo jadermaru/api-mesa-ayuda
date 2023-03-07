@@ -1,0 +1,59 @@
+api:
+  version: 1.0.0
+  title: Mesa de ayuda API
+  basePackage: com.enyoi.apimesaayuda
+  description: Api para aplicacion Mesa de ayuda
+  terms: https://
+
+#Server configurations
+server:
+  servlet:
+    context-path: /api-mesa-ayuda
+  port: ${PORT:8080}
+  error:
+    include-message: always
+    include-binding-errors: always
+
+#Swagger-ui custom path
+springdoc:
+  api-docs:
+    path: /api-docs
+
+#Spring configs
+spring:
+  jpa:
+    defer-datasource-initialization: true
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    #jdbc:mysql://enyoi.co:3306/enyoi_db
+    #enyoi_db
+    #3tT9ip9_8
+    url: jdbc:mysql://localhost:3306/bdenyoi
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    host: smtp.office365.com
+    port: 587
+    username: backend@enyoi.co
+    password: EY.back2022*
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          auth: true
+          starttls:
+            required: true
+            enable: true
+
+#Token Configs
+jwt:
+  secret: Ap1M3544yud@
+  expiration: 3600000
