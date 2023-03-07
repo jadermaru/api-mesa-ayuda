@@ -33,9 +33,9 @@ spring:
     #jdbc:mysql://enyoi.co:3306/enyoi_db
     #enyoi_db
     #3tT9ip9_8
-    url: jdbc:mysql://localhost:3306/bdenyoi
-    username: root
-    password: root
+    url: jdbc:mysql://enyoi.co:3306/enyoi_db
+    username: enyoi_db
+    password: 3tT9ip9_8
     driver-class-name: com.mysql.cj.jdbc.Driver
   mail:
     host: smtp.office365.com
