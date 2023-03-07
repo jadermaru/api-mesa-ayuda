@@ -38,16 +38,16 @@ spring:
     password: 3tT9ip9_8
     driver-class-name: com.mysql.cj.jdbc.Driver
   mail:
-    host: smtp.office365.com
+    host: smtp.gmail.com
     port: 587
-    username: backend@enyoi.co
-    password: EY.back2022*
+    username: jaderdavidv@gmail.com
+    password: f e k d v l w w w x p o t t a y
     properties:
       mail:
         smtp:
-          connectiontimeout: 5000
-          timeout: 5000
-          writetimeout: 5000
+          connectiontimeout: 25000
+          timeout: 25000
+          writetimeout: 25000
           auth: true
           starttls:
             required: true
